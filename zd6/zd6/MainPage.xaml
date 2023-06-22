@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zd6.MainPage">
+
+    <ContentPage.Resources>
+        
+        <StyleSheet Source="myStyles.css"/>
+        
+    </ContentPage.Resources>
+
+    <StackLayout Orientation="Vertical">
+
+        <Label Text="Информация по видам материалов" FontSize="Medium" HorizontalOptions="Center" StyleId="labelmedium1" FontAttributes="Bold" Margin="0,20,0,0"/>
+        <Label Text="(покупка пиломатериалов)" FontSize="Medium" HorizontalOptions="Center" StyleId="labelmedium1" FontAttributes="Bold" Margin="0,-7,0,0"/>
+        <StackLayout Orientation="Vertical">
+            
+            <Image x:Name="picture" Source="doska_obreznay.jpg" Margin="5,10,0,0" WidthRequest="150" HeightRequest="150"/>
+            <Label x:Name="title" StyleId="labelmedium" Margin="5,0,0,0"/>
+            <Label x:Name="typeTree"  StyleId="labelsmall" Margin="5,0,10,0"/>
+            <Label x:Name="categori" StyleId="labelsmall" Margin="5,0,10,0"/>
+            <Label x:Name="manufacturer" StyleId="labelsmall" Margin="5,0,10,0"/>
+            <Label x:Name="days" StyleId="labelsmall" Margin="5,0,10,0"/>
+            <Label x:Name="description" StyleId="labelsmall" Margin="5,0,10,0"/>
+            <Entry x:Name="entry" StyleId="entry" Placeholder="Введите кол-во метров для покупки" HorizontalOptions="Start" Margin="5,0,50,0"/>
+            <Button x:Name="next" StyleId="button" Text="Расчет стоимости" Margin="5,0,10,0" Clicked="next_Clicked" />
+            <Button x:Name="back" StyleId="button" Text="Вернуться назад" Margin="5,0,10,0" Clicked="back_Clicked" />
+
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>

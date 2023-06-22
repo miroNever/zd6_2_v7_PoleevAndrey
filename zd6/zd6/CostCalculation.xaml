@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zd6.CostCalculation">
+
+    <ContentPage.Resources>
+        
+        <StyleSheet Source="myStyles.css"/>
+        
+    </ContentPage.Resources>
+    
+    <StackLayout Orientation="Vertical">
+
+        <Label Text="Расчет стоимости" StyleId="labellarge" HorizontalOptions="Center" FontAttributes="Bold" Margin="0,50,0,0"/>
+        <Label x:Name="metr" Text="Кол-во метров: " StyleId="labelmedium" Margin="15,100,0,0"/>
+        <Label x:Name="price" Text="Цена за м. материала: " StyleId="labelmedium" Margin="15,15,0,0"/>
+        <Label x:Name="day" Text="Количество дней на изготовление: " StyleId="labelmedium" Margin="15,15,0,0"/>
+
+        <Picker x:Name="PaymentTypePicker" StyleId="picker" Title="Тип оплаты" Margin="15,15,15,0" SelectedIndex="0" SelectedIndexChanged="PaymentTypePicker_SelectedIndexChanged">
+
+            <Picker.Items>
+                <x:String>Наличный</x:String>
+                <x:String>Безналичный</x:String>
+            </Picker.Items>
+
+        </Picker>
+
+        <Label x:Name="cost" Text="Стоимость: " StyleId="labelmedium" Margin="15,15,0,0"/>
+
+        <Button x:Name="next" Text="Вернуться на главную" Margin="30,50,30,0" StyleId="button" Clicked="next_Clicked" />
+        <Button x:Name="back" Text="Вернуться назад" Margin="30,0,30,0" StyleId="button" Clicked="back_Clicked" />
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,33 @@
+﻿#entry {
+    border-radius: 100;
+    color: green;
+}
+
+#button {
+    color: green;
+    background-color: yellow;
+    font-size: small;
+}
+
+#picker {
+    color: green;
+}
+
+#labelsmall {
+    color: green;
+    font-size:small;
+}
+#labelmedium {
+    color: green;
+    font-size: medium;
+}
+#labelmedium1 {
+    color: green;
+    font-size: medium;
+    background-color: yellow;
+}
+#labellarge {
+    color: green;
+    font-size: large;
+    background-color: yellow;
+}
